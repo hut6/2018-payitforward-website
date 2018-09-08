@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "css": [
+            "@sass",
+            "@autoprefixer"
+        ],
+        "watchcss": "fswatch -r -e \".*\" -i \".*\\.scss$\" scss | (while read; do composer css; done)",
+        "sass": "docker run --rm -v $PWD:$PWD -w $PWD xzyfer/docker-libsass:3.3 -m -t expanded scss/style.scss css/style.css",
+        "autoprefixer": "docker run --rm -v $PWD:$PWD -w $PWD hut6/postcss:6.0.11 -m -u autoprefixer -u cssnano -o css/style.min.css css/style.css"
+    }
+}
