@@ -1044,7 +1044,7 @@ select::-ms-expand {
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.96;
+  opacity: 0.9;
   z-index: 1;
   background-color: #008caf;
 }
@@ -1213,7 +1213,7 @@ select::-ms-expand {
 }
 
 .expanded {
-  padding: 72pt 0;
+  padding: 50pt 0;
 }
 
 .expanded__inner {

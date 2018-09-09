@@ -1,237 +1,356 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<meta class="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>BLAH by HutSix</title>
-	<!-- Don't forget to add your metadata here -->
-	<link rel='stylesheet' href='css/style.min.css' />
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Kind Space NT by HutSix</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#008caf">
+    <meta name="msapplication-TileColor" content="#008caf">
+    <meta name="theme-color" content="#008caf">
+
+    <link rel='stylesheet' href='css/style.min.css'/>
 </head>
 <body>
-	<!-- Hero(extended) navbar -->
-	<div class="navbar navbar--extended">
-		<nav class="nav__mobile"></nav>
-		<div class="container">
-			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo" style="transform: translateY(20px); display: block;">
-					<img src="/images/icon-small-shadow.png" width="70" alt="">
-				</a>
-				<nav class="navbar__menu">
-					<ul>
-						<li><a href="/auth.html">Sign In</a></li>
-						<li><a href="http://www.hutsix.com.au">About HutSix</a></li>
-					</ul>
-				</nav>
-				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
-			</div>
-		</div>
-	</div>
-	<!-- Hero unit -->
-	<div class="hero">
-		<div class="hero__overlay hero__overlay--gradient"></div>
-		<div class="hero__mask"></div>
-		<div class="hero__inner">
-			<div class="container">
-				<div class="hero__content">
-					<div class="hero__content__inner" id='navConverter'>
-						<h1 class="hero__title">
-							Are you desparate for some help?
-						</h1>
-						<p class="hero__text">
-							Can't find anyone to bring you to a doctor's appointment or to your weekly sports game? Do you struggle to get things done alone? Are you or your family under financial strain and aren't coping with things?
-						</p>
-						<a href="#" class="button button__accent">Download BLAH</a>
-						<a href="#" class="button hero__button">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="display: inline-block; transform: translateY(2px);color: #fff;enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
-							&nbsp;&nbsp; Scroll to learn more
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="hero__sub">
+<!-- Hero(extended) navbar -->
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" style="transform: translateY(20px); display: block;">
+                <img src="/images/icon-small-shadow.png" width="70" alt="">
+            </a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li><a href="/auth.html">Sign In</a></li>
+                    <li><a href="http://www.hutsix.com.au">About HutSix</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob"><a href="" id='toggle'>
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                              class=""></path>
+                    </svg>
+                </a></div>
+        </div>
+    </div>
+</div>
+<!-- Hero unit -->
+<div class="hero">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="hero__inner">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__content__inner" id='navConverter'>
+                    <h1 class="hero__title" style="text-align: center">
+                        Kind Space NT
+                    </h1>
+                    <p class="hero__text" style="text-align: center">
+                        <strong>Kind Space NT</strong> is the marketplace for acts of kindness in the Northern Territory.
+                    </p>
+                    <p class="hero__text" style="text-align: center">
+                        Are you desparate for some help? Do you struggle to get things done? Are you or your family under financial strain and aren't coping
+                        with things?
+                    </p>
+                    <p style="text-align: center">Then <strong>Kind Space NT</strong> might be able to help.</p>
+
+                    <a href="#" class="button button__accent">Download <strong>Kind Space NT</strong></a>
+                    <a href="#" class="button hero__button">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px"
+                             height="512px" viewBox="0 0 512 512"
+                             style="display: inline-block; transform: translateY(2px);color: #fff;enable-background:new 0 0 512 512;" xml:space="preserve"><path
+                                    d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+                        &nbsp;&nbsp; Scroll to learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hero__sub">
 		<span id="scrollToNext" class="scroll">
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style=" enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px"
+                 viewBox="0 0 512 512" style=" enable-background:new 0 0 512 512;" xml:space="preserve"><path
+                        d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
-	</div>
-	<!-- Steps -->
-	<div class="steps landing__section">
-		<div class="container">
-			<h2>Who can use BLAH?</h2>
-			<p>Here's who we can think of, but surely creative people will surprise us.</p>
-		</div>
-		<div class="container">
-			<div class="steps__inner">
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/icons/undraw_doctor_kw5l.svg" class="step__image">
-					</div>
-					<h4>The elderly</h4>
-					<p class="step__text">A landing page for your open source projects. Present your solution, easily create docs.</p>
-				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/icons/undraw_goal_0v5v.svg" class="step__image">
-					</div>
-					<h4>Teens</h4>
-					<p class="step__text">A website for your own freebies. Let the world download and use your artwork.</p>
-				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/icons/undraw_files_6b3d.svg" class="step__image">
-					</div>
-					<h4>Job Seekers</h4>
-					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
-				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/icons/undraw_group_selfie_ijc6.svg" class="step__image">
-					</div>
-					<h4>Anyone in need</h4>
-					<p class="step__text">A great starting point for your web application. Focus on your idea and execution.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Expanded sections -->
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/icons/undraw_superhero_kguv.svg" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Who can HELP BLAH</h2>
-					<p class="expanded__text">BLAH brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/AMSAw0yCxUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">How it works</h2>
-					<p class="expanded__text">BLAH has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
+<!-- Steps -->
+<div class="steps landing__section">
+    <div class="container">
+        <h2>Who can use <strong>Kind Space NT</strong>?</h2>
+        <p>Here's who we can think of, but surely creative people will surprise us.</p>
+    </div>
+    <div class="container">
+        <div class="steps__inner">
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/icons/undraw_doctor_kw5l.svg" class="step__image">
+                </div>
+                <h4>Patients</h4>
+                <p class="step__text" style="padding-right: 10px">
+                    Do you have to attend regular appointments and are strapped for cash? For example, chemo therapy, dialysis, physio / occupational therapy,
+                    support group meetings? Then <strong>Kind Space NT</strong> can help you.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/icons/undraw_goal_0v5v.svg" class="step__image">
+                </div>
+                <h4>Teens</h4>
+                <p class="step__text" style="padding-right: 10px">
+                    You don't have a car or a licence yet, and you struggle to get to sporting activities? You don't have anyone to take you? Then <strong>Kind
+                        Space NT</strong> can help you.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/icons/undraw_files_6b3d.svg" class="step__image">
+                </div>
+                <h4>Job Seekers</h4>
+                <p class="step__text" style="padding-right: 10px">
+                    You've just arrived in the territory, you're poor and you don't have a car yet. You have job interviews to go to. Then <strong>Kind Space
+                        NT</strong> can help you too.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/icons/undraw_group_selfie_ijc6.svg" class="step__image">
+                </div>
+                <h4>Anyone in need</h4>
+                <p class="step__text">
+                    Are you under financial strain and aren't coping with things?
+                    There might be someone out there willing to provide a random act of kindness.
+                    Try <strong>Kind Space NT</strong>, you might be surprised.
+                </p>
+            </div>
+        </div>
+
+        <a href="#" class="button button__accent">Download <strong>Kind Space NT</strong> if you need help</a>
+
+    </div>
+</div>
+<!-- Expanded sections -->
+<div class="expanded landing__section">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__media">
+                <img src="./images/icons/undraw_superhero_kguv.svg" class="expanded__image">
+            </div>
+            <div class="expanded__content">
+                <h2 class="expanded__title"><strong>Kind Space NT</strong> needs your help too!</h2>
+                <p>
+                    There are people in need of help out there. You might have some spare time on your hands. Can you lend a hand?
+                </p>
+                <p>
+                    This is a chance to meet new people too. Especially if you've just arrived in the territory.
+                </p>
+                <p>
+                    With <strong>Kind Space NT</strong>, the acts of kindness are not necessarily random; you know that you're helping the community out.
+                </p>
+                <p>
+                    Don't expect to make money out of it. Being benevolent and helping out your community makes you feel good. People in need are not expected
+                    to pay for the services, but can choose to cover the costs of fuel for example, or make a gift.
+                </p>
+                <a href="#" class="button button__accent">Download <strong>Kind Space NT</strong> and start helping people</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="expanded landing__section">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AMSAw0yCxUY" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="expanded__content">
+                <h2 class="expanded__title">How it works</h2>
+                <p class="expanded__text">
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="expanded landing__section">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__media">
+                <img src="./images/icons/undraw_QA_engineers_dg5p.svg" class="expanded__image">
+
+            </div>
+            <div class="expanded__content">
+                <h2 class="expanded__title">Where to from here?</h2>
+                <p>
+                    The app is a prototype currently. It needs much more work to be production ready.
+                </p>
+                <p>
+                    Because it relies on the community members doing favours to other community members, there isn't a lot of money going around to maintain the
+                    app, and pay for the infrastructure to keep the service up and running. We don't want to charge for the use of the app. We could accept
+                    donations, but that might not go far enough.
+                </p>
+                <p>
+                    Support from government agencies such as the NT Department of Health might be interested in the app, as it helps people get to health
+                    services. Similarly, the NT Department of Tourism and Culturemight also be interested to increase the involments of teens in events in the
+                    community.
+                </p>
+                <p>
+                    To avoid abuse of the system, we would need to have a rating system in place. If someone abuses the system, they get banned. We think that
+                    verifying identities of users (for both users and givers) will also help stop abuse and trolls. There are automated services out there that
+                    can do this but it will come at an increased cost.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+<!--
+<div class="page__header">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="page__header__inner">
+        <div class="container">
+            <div class="page__header__content">
+                <div class="page__header__content__inner" id='navConverter'>
+                    <h1 class="page__header__title">Multi-purpose page</h1>
+                    <p class="page__header__text">This is mostly a simple layout, rather than a complete page unlike the others. However this is a really useful starting point for anything you want to create.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!--
-	<div class="page__header">
-		<div class="hero__overlay hero__overlay--gradient"></div>
-		<div class="hero__mask"></div>
-		<div class="page__header__inner">
-			<div class="container">
-				<div class="page__header__content">
-					<div class="page__header__content__inner" id='navConverter'>
-						<h1 class="page__header__title">Multi-purpose page</h1>
-						<p class="page__header__text">This is mostly a simple layout, rather than a complete page unlike the others. However this is a really useful starting point for anything you want to create.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="page">
+    <div class="container">
+        <div class="page__inner">
+            <div class="page__menu">
+                <ul class="vMenu">
+                    <li><a href="#" class="vMenu--active">Active page</a></li>
+                    <li><a href="#">Second page</a></li>
+                    <li><a href="#">Third page</a></li>
+                    <li><a href="#">Fourth page</a></li>
+                    <li><a href="#">Fifth page</a></li>
+                </ul>
+            </div>
+            <div class="page__main">
+                <div class="text-container">
+                    <h3 class="page__main__title">This is the main area</h3>
+                    <p>Write or do whatever you want here!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
 
-	<div class="page">
-		<div class="container">
-			<div class="page__inner">
-				<div class="page__menu">
-					<ul class="vMenu">
-						<li><a href="#" class="vMenu--active">Active page</a></li>
-						<li><a href="#">Second page</a></li>
-						<li><a href="#">Third page</a></li>
-						<li><a href="#">Fourth page</a></li>
-						<li><a href="#">Fifth page</a></li>
-					</ul>
-				</div>
-				<div class="page__main">
-					<div class="text-container">
-						<h3 class="page__main__title">This is the main area</h3>
-						<p>Write or do whatever you want here!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
+<div class="expanded landing__section">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__media">
+                <img src="./images/icons/undraw_JavaScript_Frameworks_x21l.svg" class="expanded__image">
+            </div>
+            <div class="expanded__content">
+                <h2 class="expanded__title">
+                    The technology
+                </h2>
+                <p class="expanded__text">
+                    The phone app was built using the Ionic Framework (https://ionicframework.com/). It has a simple data store on a Vultr server (MySQL +
+                    nginx).
+                </p>
+                <h2 class="expanded__title">
+                    The data sets used
+                </h2>
+                <p class="expanded__text">
+                    <strong>
+                        <a class="link" href="http://darwin.maps.arcgis.com/apps/webappviewer/index.html?id=0924b52fa39642268c4ba6d52a46fa86">
+                        City of Darwin Open Data Hub - Parks and Facilities Application
+                        </a>
+                    </strong><br>
+                    It's used in the app to list community locations (eg sporting facilities, parks, etc...) when people need to arrange transport to a location, without having to enter an address.
+                </p>
+                <p class="expanded__text">
+                    <strong><a class="link" href="https://data.aurin.org.au/dataset/healthdirect-nhsd-point-december-2017-na">
+                        National Health Services Directory (NHSD) (Point) 2017
+                        </a>
+                    </strong><br>
+                    When someone needs transport to a health facility, the app will let users pick a health facility from a list, instead of having to input an address.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/together.svg" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">The technology</h2>
-					<p class="expanded__text">Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you'll find it awesome and useful!</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="expanded landing__section">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__media">
+                <img src="./images/icons/undraw_group_selfie_ijc6.svg" class="expanded__image">
+            </div>
+            <div class="expanded__content">
+                <h2>Who are we?</h2>
+                <p>
+                    <strong>
+                        Team HutSix
+                    </strong>
+                </p>
+                <p>
+                    <a href="" target="_blank" class="link">Luke MacDonnell (developer)</a><br>
+                    <a href="" target="_blank" class="link">Johan Douma (developer)</a><br>
+                    <a href="" target="_blank" class="link">Franky So (av editor)</a>
+                </p>
+                <p>
+                    We call Alice Spring home.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="./images/icons/undraw_group_selfie_ijc6.svg" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Who are we?</h2>
-					<p class="expanded__text">
-						<a href="" target="_blank" class="footer__link">Luke McDonnell (developer)</a><br>
-						<a href="" target="_blank" class="footer__link">Johan Douma (developer)</a><br>
-						<a href="" target="_blank" class="footer__link">Franky So (AV editor)</a>.<br>
-						We call Alice Spring (Norther Territory) home.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- Call To Action -->
+<div class="cta cta--reverse">
+    <div class="container">
+        <div class="cta__inner">
+            <h2 class="cta__title">What's stopping you?</h2>
+            <br>
+            <a href="#" class="button button__accent">Download <strong>Kind Space NT</strong></a>
+        </div>
+    </div>
+</div>
 
-	<!-- Call To Action -->
-	<div class="cta cta--reverse">
-		<div class="container">
-			<div class="cta__inner">
-				<h2 class="cta__title">What's stopping you?</h2>
-				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
-				<a href="#" class="button button__accent">Download BLAH</a>
-			</div>
-		</div>
-	</div>
+<!-- Footer -->
+<div class="footer footer--dark">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="index.html" class="footer__textLogo"><strong>Kind Space NT</strong></a>
+            <div class="footer__data">
+                <div class="footer__data__item">
 
-	<!-- Footer -->
-	<div class="footer footer--dark">
-		<div class="container">
-			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">BLAH</a>
-				<div class="footer__data">
-					<div class="footer__data__item">
+                    <div class="footer__row">
+                        Created by the HutSix team for
+                        <a href="https://www.govhack.org/" class="footer__link">
+                            GovHack 2018
+                        </a>
+                    </div>
+                    <div class="footer__row">
+                        Team Members:<br>
+                        <a href="" target="_blank" class="footer__link">Luke McDonnell</a>,
+                        <a href="" target="_blank" class="footer__link">Johan Douma</a>,
+                        <a href="" target="_blank" class="footer__link">Franky So</a>
+                    </div>
+                </div>
 
-						<div class="footer__row">
-							Created by the HutSix team for
-							<a href="https://www.govhack.org/" class="footer__link">
-								GovHack 2018
-							</a>
-						</div>
-						<div class="footer__row">
-							Team Members:<br>
-							<a href="" target="_blank" class="footer__link">Luke McDonnell</a>,
-							<a href="" target="_blank" class="footer__link">Johan Douma</a>,
-							<a href="" target="_blank" class="footer__link">Franky So</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src='js/app.min.js'></script>
 </body>
