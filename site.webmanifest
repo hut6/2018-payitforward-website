@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Kind Space NT",
+    "short_name": "Kind Space NT",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#008caf",
-    "background_color": "#008caf",
+    "theme_color": "#ffa342",
+    "background_color": "#ffa342",
     "display": "standalone"
 }
